@@ -1,0 +1,22 @@
+form p {
+   margin: 10px 0;
+}
+label, input {
+   vertical-align: middle;
+}
+label {
+   width: 100px;
+   display: inline-block;
+}
+input {
+   width: 240px;
+}
+input[type="radio"],
+input[type="button"],
+input[type="checkbox"] {
+   width: auto;
+}
+label {
+   text-align: right;
+   margin-right: 10px;
+}

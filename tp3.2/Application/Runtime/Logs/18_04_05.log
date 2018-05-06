@@ -1,0 +1,21 @@
+[ 2018-04-05T12:17:23+08:00 ] ::1 /index.php?m=admin&c=user&a=index
+ERR: Think\Model:getTimeByTname方法不存在！
+
+[ 2018-04-05T12:17:25+08:00 ] ::1 /index.php?m=admin&c=user&a=index
+ERR: Think\Model:getTimeByTname方法不存在！
+
+[ 2018-04-05T12:17:51+08:00 ] ::1 /index.php?m=admin&c=user&a=index
+ERR: Think\Model:getTimeByTname方法不存在！
+
+[ 2018-04-05T12:17:53+08:00 ] ::1 /index.php?m=admin&c=user&a=index
+ERR: Think\Model:getTimeByTname方法不存在！
+
+[ 2018-04-05T12:18:14+08:00 ] ::1 /index.php?m=admin&c=user&a=index
+ERR: Think\Model:getTimeByTname方法不存在！
+
+[ 2018-04-05T12:50:03+08:00 ] ::1 /index.php?m=&&c=login
+ERR: 无法加载控制器:Login
+
+[ 2018-04-05T12:51:01+08:00 ] ::1 /index.php?m=&&c=login
+ERR: 无法加载控制器:Login
+

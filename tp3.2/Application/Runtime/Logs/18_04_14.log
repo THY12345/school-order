@@ -1,0 +1,21 @@
+[ 2018-04-14T11:27:40+08:00 ] ::1 /index.php?m=admin&c=login&a=signincheck
+ERR: Think\Model:getAdminByUsernameme方法不存在！
+
+[ 2018-04-14T11:31:52+08:00 ] ::1 /index.php?m=admin&c=login&a=signincheck
+ERR: Think\Model:getAdminByUsernameme方法不存在！
+
+[ 2018-04-14T11:34:17+08:00 ] ::1 /index.php?m=admin&c=login&a=signincheck
+ERR: Think\Model:getAdminByUsernameme方法不存在！
+
+[ 2018-04-14T11:35:22+08:00 ] ::1 /index.php?m=admin&c=login&a=signincheck
+ERR: Think\Model:getAdminByUsernameme方法不存在！
+
+[ 2018-04-14T11:36:50+08:00 ] ::1 /index.php?m=admin&c=login&a=signincheck
+ERR: Think\Model:getAdminByUsernameme方法不存在！
+
+[ 2018-04-14T11:39:53+08:00 ] ::1 /index.php?m=admin&c=login&a=signincheck
+ERR: Think\Model:getAdminByUsernameme方法不存在！
+
+[ 2018-04-14T11:41:08+08:00 ] ::1 /index.php?m=admin&c=login&a=signincheck
+ERR: Think\Model:getAdminByUsernameme方法不存在！
+

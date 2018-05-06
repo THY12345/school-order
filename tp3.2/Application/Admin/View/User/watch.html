@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<meta charset="utf-8">
+</head>
+<link rel="stylesheet" type="text/css" href="/public/css/user.css">
+<script src="/Public/js/jquery.js"></script>
+<script src="/Public/js/admin/user.js"></script>
+<style type="text/css">
+	table{
+  		border-collapse:collapse;
+	}
+
+	table,th, td{
+ 		 border: 1px solid black;
+	}
+</style>
+
+<body>
+	<div class="header">
+		<h1>校园预约</h1>
+		<div class="person">
+			<ul>
+				<li class="lineli"><label>{$uname}</label></li>
+				<li class="lineli"><a class="exita" href="/index.php?m=admin&c=user&a=person" >个人中心</a></li>
+				<li class="lineli"><a class="exita" href="/index.php?m=admin&c=login&a=loginout" >退出</a></li>
+			</ul>
+			
+		</div>
+	</div>
+	<div class="nav">
+		<ul class="userMenu">
+            <li ><a class="menua" href="/index.php?m=admin&c=user&a=index" <if condition="$type eq 1">style="display:none"</if>>时间</a></li>
+            <li><a class="menua" href="/index.php?m=admin&c=user&a=order" <if condition="$type eq 0">style="display:none"</if>>查询</a></li>
+            <li><a class="menua" href="/index.php?m=admin&c=user&a=change" <if condition="$type eq 0">style="display:none"</if>>已预约</a></li>
+            <li class="current"> <a class="menua" href="/index.php?m=admin&c=user&a=watch" <if condition="$type eq 1">style="display:none"</if>>已被预约</a></li>
+
+     	</ul>
+	</div>
+	<!-- <?php
+		echo json_encode($users);
+		echo $users[stime];
+	?> -->
+	<div class="section">
+		
+			<div class="lshow">
+				<form>
+					<table>
+						<thead>
+							<tr>
+								<th>id</th>
+								<th>username</th>
+								<th>姓名</th>
+								<th>开始时间</th>
+								<th>结束时间</th>
+								<!-- <th>状态</th> -->
+								<!-- <th>操作</th> -->
+							</tr>
+						</thead>
+						<tbody>
+						<volist name="users" id="user">
+							<tr>
+								<td>{$user.id}</td>
+								<td>{$user.username}</td>
+								<td>{$user.name}</td>
+								<td>{$user.stime}</td>
+								<td>{$user.etime}</td>
+								<!-- <td>{$user.status}</td>
+								<td><a href="javascript:void(0)" attr-id="{$user.id}" id="delete" onclick="user.order({$user.id})">预约</a></td> -->
+							</tr>
+						</volist>
+						</tbody>
+					</table>
+				</form>
+			</div>
+			
+			<div class="rshow">
+				<!-- <div class="searchdiv">
+					<input type="text" class="search" value="{$searchname}" id="search">
+					<input type="button" value="搜索" class="button" onclick="user.search()">
+				</div>
+				<div>
+					
+				</div> -->
+			</div>
+			
+	</div>
+
+</body>
+</html>

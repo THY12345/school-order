@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<meta charset="utf-8">
+</head>
+<link rel="stylesheet" type="text/css" href="/public/css/user.css">
+<script src="/Public/js/jquery.js"></script>
+<script src="/Public/js/admin/user.js"></script>
+<style type="text/css">
+	table{
+  		border-collapse:collapse;
+	}
+
+	table,th, td{
+ 		 border: 1px solid black;
+	}
+</style>
+
+<body>
+	<div class="header">
+		<h1>校园预约</h1>
+		<div class="person">
+			<ul>
+				<li class="lineli"><label>{$uname}</label></li>
+				<li class="lineli"><a class="exita" href="/index.php?m=admin&c=user&a=person" >个人中心</a></li>
+				<li class="lineli"><a class="exita" href="/index.php?m=admin&c=login&a=loginout" >退出</a></li>
+			</ul>
+			
+		</div>
+	</div>
+	<div class="nav">
+		<ul class="userMenu">
+            <li class="current"><a class="menua" href="/index.php?m=admin&c=user&a=index" <if condition="$type eq 1">style="display:none"</if>>时间</a></li>
+            <li><a class="menua" href="/index.php?m=admin&c=user&a=order" <if condition="$type eq 0">style="display:none"</if>>查询</a></li>
+            <li><a class="menua" href="/index.php?m=admin&c=user&a=change" <if condition="$type eq 0">style="display:none"</if>>已预约</a></li>
+            <li><a class="menua" href="/index.php?m=admin&c=user&a=watch" <if condition="$type eq 1">style="display:none"</if>>已被预约</a></li>
+     	</ul>
+	</div>
+	<!-- <?php
+		echo json_encode($users);
+		echo $users[stime];
+	?> -->
+	<div class="section">
+		
+			<div class="lshow">
+				<!-- <p>{$data}</p> -->
+				<form enctype="multipart/form-data" id="addform" method="post">
+					<label style="display:none">username</label><input type="text" class="search" name="username" value="{$uname}" id="search" style="display:none">
+					<label>日期</label><input type="date" class="search" name="date" value="" id="search" min={$data}></br>
+					<label>开始时间</label><input type="time" class="search" name="stime" value="" id="search"></br>
+					<label>结束时间</label><input type="time" class="search" name="etime" value="" id="search">
+					<label style="display:none">status</label><input type="text" class="search" name="status" value="1" id="search" style="display:none">
+					<br>
+					<button class="button" id="button_add" type="button" onclick="user.add()">添加</button>
+				</form>
+				
+				<form>
+					<table>
+						<thead>
+							<tr>
+								<th>id</th>
+								<th>日期</th>
+								<th>开始时间</th>
+								<th>结束时间</th>
+								<th>状态</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+						<volist name="users" id="user">
+							<tr>
+								<td>{$user.id}</td>
+								<td>{$user.date}</td>
+								<td>{$user.stime}</td>
+								<td>{$user.etime}</td>
+								<td>{$user.status}</td>
+								<td><a href="javascript:void(0)" attr-id="{$user.id}" id="delete" onclick="user.delete({$user.id})">删除</a></td>
+							</tr>
+						</volist>
+						</tbody>
+					</table>
+				</form>
+			</div>
+			
+			<div class="rshow">
+				<!-- <div class="searchdiv">
+					<input type="text" class="search" value="" id="search">
+					<input type="button" value="搜索" class="button" onclick="search()">
+				</div> -->
+				<div>
+					
+				</div>
+			</div>
+			
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+[ 2018-04-15T11:04:42+08:00 ] ::1 /index.php?m=admin&c=user&a=person
+ERR: 非法操作:person
+
+[ 2018-04-15T21:26:05+08:00 ] ::1 /index.php?m=admin&c=user&a=changeInfor
+ERR: 非法操作:changeinfor
+
+[ 2018-04-15T21:41:40+08:00 ] ::1 /index.php?m=admin&c=user&a=changeInfor
+ERR: 非法操作:changeinfor
+
+[ 2018-04-15T21:41:48+08:00 ] ::1 /index.php?m=admin&c=user&a=changeInfor
+ERR: 非法操作:changeinfor
+
+[ 2018-04-15T21:42:18+08:00 ] ::1 /index.php?m=admin&c=user&a=changeInfor
+ERR: 非法操作:changeinfor
+
+[ 2018-04-15T21:59:49+08:00 ] ::1 /index.php?m=admin&c=user&a=changePassw
+ERR: 非法操作:changepassw
+
+[ 2018-04-15T22:02:56+08:00 ] ::1 /index.php?m=admin&c=user&a=changePassw
+ERR: 非法操作:changepassw
+
+[ 2018-04-15T23:00:23+08:00 ] ::1 /index.php?m=admin&c=user&a=changeInfor
+ERR: 非法操作:changeinfor
+
+[ 2018-04-15T23:00:25+08:00 ] ::1 /index.php?m=admin&c=user&a=changeInfor
+ERR: 非法操作:changeinfor
+
+[ 2018-04-15T23:00:31+08:00 ] ::1 /index.php?m=admin&c=user&a=changeInfor
+ERR: 非法操作:changeinfor
+
+[ 2018-04-15T23:03:18+08:00 ] ::1 /index.php?m=admin&c=user&a=changePassw
+ERR: 非法操作:changepassw
+
+[ 2018-04-15T23:03:24+08:00 ] ::1 /index.php?m=admin&c=user&a=changeInfor
+ERR: 非法操作:changeinfor
+
+[ 2018-04-15T23:03:34+08:00 ] ::1 /index.php?m=admin&c=user&a=changeInfor
+ERR: 非法操作:changeinfor
+
+[ 2018-04-15T23:03:40+08:00 ] ::1 /index.php?m=admin&c=user&a=changeInfor
+ERR: 非法操作:changeinfor
+
+[ 2018-04-15T23:03:52+08:00 ] ::1 /index.php?m=admin&c=user&a=changeInfor
+ERR: 非法操作:changeinfor
+
+[ 2018-04-15T23:07:08+08:00 ] ::1 /index.php?m=admin&c=user&a=changePassw
+ERR: 非法操作:changepassw
+
+[ 2018-04-15T23:15:18+08:00 ] ::1 /index.php?m=admin&c=user&a=saveInfo
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( username="44" )' at line 1
+ [ SQL语句 ] : UPDATE `user` SET  WHERE ( username="44" )
+

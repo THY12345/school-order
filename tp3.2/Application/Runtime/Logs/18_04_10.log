@@ -1,0 +1,12 @@
+[ 2018-04-10T09:45:44+08:00 ] ::1 /index.php?m=admin&c=user&a=order
+ERR: 1054:Unknown column 'name.id' in 'field list'
+ [ SQL语句 ] : SELECT name.id as id,name.username as username,name.name as name,time.stime as stime,time.etime as etime,time.status as status FROM `name` INNER JOIN time ON time.username =name.username  WHERE ( name="王" ) 
+
+[ 2018-04-10T09:45:47+08:00 ] ::1 /index.php?m=admin&c=user&a=order
+ERR: 1054:Unknown column 'name.id' in 'field list'
+ [ SQL语句 ] : SELECT name.id as id,name.username as username,name.name as name,time.stime as stime,time.etime as etime,time.status as status FROM `name` INNER JOIN time ON time.username =name.username  WHERE ( name="王" ) 
+
+[ 2018-04-10T09:45:50+08:00 ] ::1 /index.php?m=admin&c=user&a=order
+ERR: 1054:Unknown column 'name.id' in 'field list'
+ [ SQL语句 ] : SELECT name.id as id,name.username as username,name.name as name,time.stime as stime,time.etime as etime,time.status as status FROM `name` INNER JOIN time ON time.username =name.username  WHERE ( name="王" ) 
+

@@ -1,0 +1,4 @@
+[ 2018-04-19T11:20:26+08:00 ] ::1 /index.php?m=admin&c=user&a=appointment
+ERR: 1054:Unknown column 'time' in 'field list'
+ [ SQL语句 ] : SELECT `time` FROM `time` WHERE ( id="20" ) LIMIT 1  
+

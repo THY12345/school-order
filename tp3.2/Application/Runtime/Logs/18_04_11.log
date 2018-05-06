@@ -1,0 +1,4 @@
+[ 2018-04-11T17:28:27+08:00 ] ::1 /index.php?m=admin&c=user&a=add
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(`username`,`stime`,`etime`,`status`) VALUES ('11','00:00','00:00','1')' at line 1
+ [ SQL语句 ] : INSERT INTO  (`username`,`stime`,`etime`,`status`) VALUES ('11','00:00','00:00','1')
+
